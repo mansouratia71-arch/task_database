@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My CV Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      margin: 20px;
+    }
+
+    h2 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 3px 6px;
+      vertical-align: middle;
+    }
+
+    td.label {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    input[type="text"] {
+      width: 240px;
+      height: 18px;
+      border: 1px solid #999;
+      padding: 1px 3px;
+      font-size: 12px;
+      box-sizing: border-box;
+    }
+
+    input.short {
+      width: 200px;
+    }
+
+    select {
+      font-size: 12px;
+    }
+
+    input[type="submit"] {
+      margin-top: 8px;
+      padding: 2px 14px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>MY CV PROJECT</h2>
+
+  <form action="/submit" method="post">
+    <table>
+
+      <tr>
+        <td class="label">First Name:</td>
+        <td><input type="text" name="fName" /></td>
+      </tr>
+      <tr>
+        <td class="label">Last Name:</td>
+        <td><input type="text" name="lName" /></td>
+      </tr>
+      <tr>
+        <td class="label">address:</td>
+        <td><input type="text" name="address" /></td>
+      </tr>
+      <tr>
+        <td class="label">country:</td>
+        <td>
+          <select name="country">
+            <option value="Egypt" selected>Egypt</option>
+            <option value="UK">UK</option>
+            <option value="USA">USA</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Saudi Arabia">Saudi Arabia</option>
+            <option value="UAE">UAE</option>
+            <option value="Other">Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="label">city:</td>
+        <td><input type="text" name="city" /></td>
+      </tr>
+      <tr>
+        <td class="label">email:</td>
+        <td><input type="text" name="email" /></td>
+      </tr>
+
+      <tr>
+        <td class="label">Latest 3 projects:</td>
+        <td><input type="text" class="short" name="project1" /></td>
+        <td><input type="text" class="short" name="project2" /></td>
+        <td><input type="text" class="short" name="project3" /></td>
+      </tr>
+      <tr>
+        <td class="label">Latest 3 courses:</td>
+        <td><input type="text" class="short" name="course1" /></td>
+        <td><input type="text" class="short" name="course2" /></td>
+        <td><input type="text" class="short" name="course3" /></td>
+      </tr>
+      <tr>
+        <td class="label">Languages:</td>
+        <td><input type="text" class="short" name="lang1" /></td>
+        <td><input type="text" class="short" name="lang2" /></td>
+        <td><input type="text" class="short" name="lang3" /></td>
+      </tr>
+      <tr>
+        <td class="label">Hobbies:</td>
+        <td><input type="text" class="short" name="hobby1" /></td>
+        <td><input type="text" class="short" name="hobby2" /></td>
+        <td><input type="text" class="short" name="hobby3" /></td>
+      </tr>
+      <tr>
+        <td class="label">Training:</td>
+        <td><input type="text" class="short" name="training1" /></td>
+        <td><input type="text" class="short" name="training2" /></td>
+        <td><input type="text" class="short" name="training3" /></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td colspan="3" style="text-align: center;">
+          <input type="submit" value="Submit" />
+        </td>
+      </tr>
+
+    </table>
+  </form>
+
+</body>
+</html>
